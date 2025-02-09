@@ -5,7 +5,7 @@ Whether you're a **data scientist, researcher, or engineer**, these snippets wil
 # How to use
 All the code snippets in this repository are **free to use, modify, and adapt** for any project. There are no restrictions—just explore the collection, find the snippet that fits your needs, and **copy-paste it directly into your script or notebook**. Each snippet is designed to be **plug-and-play**, meaning you can use them as they are or tweak them to match your specific requirements. Whether you're looking for a quick visualization or an advanced customization, you’re free to use anything and everything in this repo however you like!
 
-# Generate Seperate Legend
+## Generate Seperate Legend
 This snippet can be use to create a seperate plot with only the legend in it. It removes the lengend from the plot you give it.
 Here is a general use case outline:
 ```python
