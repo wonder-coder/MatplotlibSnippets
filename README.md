@@ -9,7 +9,6 @@ All the code snippets in this repository are **free to use, modify, and adapt** 
 This snippet can be use to create a seperate plot with only the legend in it. It removes the lengend from the plot you give it.
 Here is a general use case outline:
 ```python
-
 import matplotlib.pyplot as plt
 
 def generate_seperate_legend(ax): # you can copy and paste this function into your code
