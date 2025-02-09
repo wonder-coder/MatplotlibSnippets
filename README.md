@@ -9,6 +9,23 @@ All the code snippets in this repository are **free to use, modify, and adapt** 
 This snippet can be use to create a seperate plot with only the legend in it. It removes the lengend from the plot you give it.
 Here is a general use case outline:
 ```python
+import matplotlib.pyplot as plt
+
+def generate_seperate_legend(ax): # you can copy and paste this function into your code
+    handles, labels = ax.get_legend_handles_labels()
+    fig_legend = plt.figure(figsize=(3, 3))
+    ax_legend = fig_legend.add_subplot(111)
+
+    ax_legend.legend(handles, labels, loc="center")
+    ax.get_legend().remove()
+
+    ax_legend.grid(False)
+    for spine in ["top", "bottom", "left", "right"]:
+        ax_legend.spines[spine].set_visible(False)
+    ax_legend.set_xticks([])
+    ax_legend.set_yticks([])
+
+    plt.show()
 
 
 ax = plt.gca()  # Your Plot
